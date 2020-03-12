@@ -10,4 +10,6 @@ export function objectMap<TSource, TDestination>(source: TSource, destType: new 
             (destination as any)[key] = (source as any)[key];
         }
     });
+    
+    return destination;
 }
